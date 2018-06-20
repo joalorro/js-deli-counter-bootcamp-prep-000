@@ -1,26 +1,28 @@
 var katzDeli = ['Blake', "Shawna", "Steven", 'Justine'];
 
-function takeANumber(katzDeliLine, name) {
+var counter = 1;
+
+function takeANumber() {
   
- 
- var msg = "You are number " + katzDeliLine.length + " in line.";
+ var msg = "You are number " + counter + " in line.";
+ counter++;
  return msg;
   
 }
 
-function nowServing (katzDeliLine) {
+function nowServing (counter) {
   
   var msg;
   
-  if (katzDeliLine.length === 0){
+  if (counter === 0){
     
     msg = "There is nobody waiting to be served!";
     return msg;
     
   } else {
     
-    msg = "Currently serving " + katzDeliLine[0] + '.';
-    katzDeliLine.shift();
+    msg = "Currently serving " + counter + '.';
+    counter--;
     return msg;
     
   }
