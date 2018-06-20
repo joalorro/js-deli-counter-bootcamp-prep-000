@@ -50,5 +50,6 @@ function currentLine(line) {
   
 }
 
-console.log( takeANumber(katzDeli,'Josh')  )
+console.log( takeANumber(katzDeli,'Josh')  );
+console.log(nowServing(katzDeli) );
 console.log( currentLine(katzDeli) ) ;
