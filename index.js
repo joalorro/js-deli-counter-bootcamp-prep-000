@@ -2,8 +2,8 @@ var katzDeli = ['Blake', "Shawna", "Steven", 'Justine'];
 
 function takeANumber(katzDeliLine, name) {
   
- katzDeliLine.push(name);
- var msg = "Welcome, " + name + ". You are number " + katzDeliLine.length + " in line.";
+ 
+ var msg = "You are number " + katzDeliLine.length + " in line.";
  return msg;
   
 }
